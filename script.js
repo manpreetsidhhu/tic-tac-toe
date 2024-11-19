@@ -112,14 +112,14 @@ document.addEventListener('mousemove', (e) => {
     cursorFollower.style.top = e.clientY + 'px';
   });
 
-  if ("serviceWorker" in navigator) {
-    window.addEventListener("load", () => {
-      navigator.serviceWorker
-        .register("/service-worker.js")
-        .then(() => console.log("Service Worker Registered"))
-        .catch((err) => console.error("Service Worker Registration Failed", err));
-    });
-  }
+//   if ("serviceWorker" in navigator) {
+//     window.addEventListener("load", () => {
+//       navigator.serviceWorker
+//         .register("/service-worker.js")
+//         .then(() => console.log("Service Worker Registered"))
+//         .catch((err) => console.error("Service Worker Registration Failed", err));
+//     });
+//   }
   window.addEventListener("load", () => {
     const splash = document.getElementById("custom-splash");
     
