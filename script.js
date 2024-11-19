@@ -120,4 +120,12 @@ document.addEventListener('mousemove', (e) => {
         .catch((err) => console.error("Service Worker Registration Failed", err));
     });
   }
+  window.addEventListener("load", () => {
+    const splash = document.getElementById("custom-splash");
+    
+    // Simulate splash screen for 3 seconds
+    setTimeout(() => {
+      splash.style.display = "none";
+    }, 3000); // Duration in milliseconds
+  });
   

@@ -95,3 +95,28 @@ body {
     pointer-events: none;
     z-index: 9999;
   }
+  #custom-splash {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+  }
+  
+  #custom-splash img {
+    width: 100px;
+    height: 100px;
+  }
+  
+  #custom-splash h1 {
+    margin-top: 20px;
+    font-size: 24px;
+    color: #4CAF50;
+  }
+  
