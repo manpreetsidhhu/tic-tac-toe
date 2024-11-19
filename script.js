@@ -126,6 +126,9 @@ document.addEventListener('mousemove', (e) => {
     // Simulate splash screen for 3 seconds
     setTimeout(() => {
       splash.style.display = "none";
-    }, 3000); // Duration in milliseconds
+    }, 1500); // Duration in milliseconds
   });
+  setTimeout(() => {
+    splash.classList.add("hide");
+  }, 1500);
   

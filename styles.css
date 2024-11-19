@@ -119,4 +119,27 @@ body {
     font-size: 24px;
     color: #4CAF50;
   }
+  .spinner {
+    border: 4px solid #f3f3f3;
+    border-top: 4px solid #4CAF50;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 2s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  #custom-splash {
+    transition: opacity 0.5s ease;
+    opacity: 1;
+  }
+  
+  #custom-splash.hide {
+    opacity: 0;
+    pointer-events: none;
+  }
+    
   
