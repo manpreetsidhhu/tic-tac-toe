@@ -96,6 +96,11 @@ body {
   pointer-events: none;
   z-index: 9999;
 }
+@media (max-width: 768px) {
+  #cursor-follower {
+      display: none; /* Hide the custom cursor on mobile screens */
+  }
+}
 #custom-splash {
   position: fixed;
   top: 0;
